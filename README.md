@@ -1,4 +1,7 @@
-#W0601CardViewModel
-스앱 5주차
-#colab
-https://colab.research.google.com/drive/1rnn8X1QpW9vnRibtRCDxPM6YgMB5jVuU
+# W0601CardViewModel
+스마트앱프로그래밍 6주차 01
+
+포커패뽑아보기
+
+# CoLab
+- https://colab.research.google.com/drive/1WD0Aw74msZ2_jeA2iA7JaEI2wFGT4jzE
