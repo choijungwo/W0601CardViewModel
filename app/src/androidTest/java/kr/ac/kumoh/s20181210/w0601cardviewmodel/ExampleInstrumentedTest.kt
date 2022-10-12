@@ -1,4 +1,4 @@
-package kr.ac.kumoh.s20181210.w0501carddealer
+package kr.ac.kumoh.s20181210.w0601cardviewmodel
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("kr.ac.kumoh.s20181210.w0501carddealer", appContext.packageName)
+        assertEquals("kr.ac.kumoh.s20181210.w0601cardviewmodel", appContext.packageName)
     }
 }

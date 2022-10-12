@@ -1,9 +1,9 @@
-package kr.ac.kumoh.s20181210.w0501carddealer
+package kr.ac.kumoh.s20181210.w0601cardviewmodel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import kr.ac.kumoh.s20181210.w0501carddealer.databinding.ActivityMainBinding
+import kr.ac.kumoh.s20181210.w0601cardviewmodel.databinding.ActivityMainBinding
 import kotlin.random.Random
 
 
@@ -17,16 +17,35 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         //binding.card1.setImageResource(R.drawable.c_10_of_clubs)
-        val c = Random.nextInt(52)
-        Log.i("Test","$c : ${getCardName(c)}")
+        /*val c = Random.nextInt(52)
+        Log.i("Card","$c : ${getCardName(c)}")
 
         val res = resources.getIdentifier(
             getCardName(c),
             "drawable",
             packageName
         )
+        binding.card1.setImageResource(res)*/
+        val c = IntArray(5)
+        val res = IntArray(5)
 
-        binding.card1.setImageResource(res)
+        for(i in c.indices){
+            c[i] = Random.nextInt(52)
+
+            Log.i("Test", "${c[i]} : " + "${getCardName(c[i])}")
+
+            res[i] = resources.getIdentifier(
+                getCardName(c[i]),
+                "drawble",
+                packageName
+            )
+        }
+
+        binding.card1.setImageResource(res[0])
+        binding.card1.setImageResource(res[1])
+        binding.card1.setImageResource(res[2])
+        binding.card1.setImageResource(res[3])
+        binding.card1.setImageResource(res[4])
     }
 }
 
